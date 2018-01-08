@@ -19,6 +19,7 @@ for(i=0;i<subjects.length;i++){
 		object=document.querySelectorAll("#Notes>div>div>object");
 		for(i=0;i<object.length;i++){
 			object[i].data=this.textContent+(i+1)+".pdf";
+			console.log(object[i].data);
 		}
 
 		//To update the url of Important Questions section
@@ -38,11 +39,18 @@ for(i=0;i<subjects.length;i++){
 		for(i=0;i<object.length;i++){
 			object[i].data=this.textContent+"cheat sheet"+(i+1)+".pdf";
 		}
+
+		//To disable the visibility of contents below the buttons when a subject is clicked
+		for(i=1;i<buttons.length;i++){
+			temp="#"+buttons[i].textContent;
+			document.querySelector(temp).classList.add("disable");
+		}
+
 	});
 }
 
 // To toggle the visibility of the Contents below the buttons
-for(i=0;i<buttons.length;i++){
+for(i=1;i<buttons.length;i++){
 	buttons[i].addEventListener("click",function(){
 		temp="#"+this.textContent;
 		document.querySelector(temp).classList.toggle("disable");
