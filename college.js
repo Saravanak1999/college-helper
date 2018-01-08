@@ -19,7 +19,6 @@ for(i=0;i<subjects.length;i++){
 		object=document.querySelectorAll("#Notes>div>div>object");
 		for(i=0;i<object.length;i++){
 			object[i].data=this.textContent+(i+1)+".pdf";
-			console.log(object[i].data);
 		}
 
 		//To update the url of Important Questions section
