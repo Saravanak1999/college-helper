@@ -1,0 +1,22 @@
+#contents{
+	text-align: center;
+	margin: 0 auto;
+}
+.disable{
+	display: none;
+}
+button{
+	margin-bottom: 5px;
+}
+.active{
+	text-decoration: underline;
+}
+#info{
+	text-align: center;
+	margin: 20px;
+}
+/*.col{
+	background-color: gray;
+	border: 3px red solid;
+	border-radius: 20%;
+}*/
